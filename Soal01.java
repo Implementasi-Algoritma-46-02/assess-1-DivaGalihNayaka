@@ -5,18 +5,26 @@ public class Soal01 {
 		// Kerjakan soalnya di sini
 		Scanner scanner = new Scanner(System.in);
 
-		int digitPertama = 123;
-        int digitKedua = 456;
-		int digitKetiga = 789;
-		int digitKeempat = 101;
-		int digitKelima = 135;
+        try {
+            
+            System.out.print("");
+            if (scanner.hasNextInt()) {  
+                int nomor = scanner.nextInt();
 
-		int hasil = (digitPertama, digitKedua, digitKetiga, digitKeempat, digitKelima);
-		System.out.println(hasil );
-
-
-
-		
-        scanner.close();
+				System.out.println("");
+                System.out.println("123 " + (123 > nomor ? "valid" : "tidak valid"));
+                System.out.println("456 " + (456 < nomor ? "valid" : "tidak valid"));
+                System.out.println("789 " + (789 > nomor ? "valid" : "tidak valid"));
+                System.out.println("101 " + (101 > nomor ? "valid" : "tidak valid"));
+                System.out.println("135 " + (135 > nomor ? "valid" : "tidak valid"));
+            } else {
+                System.out.println("Error: Input harus berupa angka.");
+            }
+        } catch (Exception e) {
+            System.out.println("Terjadi kesalahan: " + e.getMessage());
+        } finally {
+;
+            scanner.close();
+        }
     }
 }
