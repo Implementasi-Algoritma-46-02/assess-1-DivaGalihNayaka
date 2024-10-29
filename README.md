@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: 
+Nama: Diva Galih Nayaka
 
-NIM : 
+NIM : 607062400094 
 
 ## Instruksi
 
